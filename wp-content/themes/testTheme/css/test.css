@@ -31,11 +31,17 @@ body header{
 
 #menu-main-navigation li a{
 	text-decoration: none;
+	color: black;
 }
 
 #mastHeadImage{
     width: 100%;
    	height: auto;
+}
+
+#threeUniqueText div{
+	padding: 20px;
+	text-align:center;
 }
 
  @media screen and (max-width: 768px) {
