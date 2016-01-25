@@ -1,0 +1,6 @@
+// Validates email
+<?php 
+
+
+
+?>
