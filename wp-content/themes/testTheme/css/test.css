@@ -6,6 +6,40 @@ body {
 	font:sans-serif;
 }
 
-body {
-	padding:20px;
+body header{
+	background: rgba(250, 250, 250, 0.8);
+	height:100px;
+	width:100%;
 }
+
+#menu-main-navigation{
+	width: 100%;
+    position: absolute;
+    background: rgba(250, 250, 250, 0.8);
+    top: 19px;
+    left: 0;
+    min-height: 50px;
+    padding:0px;
+}
+
+#menu-main-navigation li{
+	float:left;
+	width:33%;
+	list-style-type: none;
+	text-align: center;
+}
+
+#menu-main-navigation li a{
+	text-decoration: none;
+}
+
+#mastHeadImage{
+    width: 100%;
+   	height: auto;
+}
+
+ @media screen and (max-width: 768px) {
+ 	#menu-main-navigation li{
+ 		display:none;
+ 	}
+ }
