@@ -3,8 +3,13 @@
 // Holds wordpress custom scripts to be included.  Declare function then run in add action
 function test_enqueue() {
 	wp_enqueue_style('customStyleId', get_template_directory_uri() . '/css/test.css', array(), '1.0.0', 'all');
-	wp_enqueue_script('customJsId', get_template_directory_uri() . '/js/test.js', array(), '1.0.0', true);
+	
+	if(is_page('Home')){
+		wp_enqueue_script('customJsId', get_template_directory_uri() . '/js/test.js', array(), '1.0.0', true);
+	}
 }
+
+//if(is_page( 'Foobar' ) wp_enqueue_script('customJsId', get_template_directory_uri() . '/js/test.js', array(), '1.0.0', true);) ;
 
 // hook that gives connection wordpress execution process to a custom function.  Gets triggered by wp_head();
 add_action('wp_enqueue_scripts', 'test_enqueue');
