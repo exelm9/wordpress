@@ -12,6 +12,9 @@ add_action('wp_enqueue_scripts', 'test_enqueue');
 // activitate specific theme support with a hook.  Easier to use functions because easy to keep track
 function test_theme_setup(){
 	add_theme_support('menus');
+
+	//description registering our nav menu hook
+	register_nav_menu('main', 'Main Header Navigation');
 };
 
 // use init because adding more functions to test them setup
