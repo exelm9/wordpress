@@ -8,8 +8,12 @@
 	
 </head>
 
-<body>
-<header>
+<body <?php body_class(); ?>>
+<header id="masthead" class="site-header" role="banner">
+
+	<div id="navbar" class="navbar">
+		<?php wp_nav_menu(array('theme_location'=>'main')); ?>
+	</div><!-- #navbar -->
 	<!-- grabs first menu available.  If want to preload other menus, have to understand paramters passed -->
-	<?php wp_nav_menu(array('theme_location'=>'main')); ?>
+	
 </header>
