@@ -66,7 +66,8 @@ function twentythirteen_header_style() {
 	?>
 		.site-header {
 			background: url(<?php header_image(); ?>) no-repeat scroll top;
-			background-size: 1600px auto;
+			background-size: center 1600px auto;
+
 		}
 		@media (max-width: 767px) {
 			.site-header {

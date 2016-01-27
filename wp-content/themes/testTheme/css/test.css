@@ -12,6 +12,16 @@ body header{
 	width:100%;
 }
 
+#masthead{
+	position: relative;
+}
+
+#navbar{
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
 #menu-main-navigation{
 	width: 100%;
     position: absolute;
@@ -20,6 +30,7 @@ body header{
     left: 0;
     min-height: 50px;
     padding:0px;
+    margin: 0px;
 }
 
 #menu-main-navigation li{
